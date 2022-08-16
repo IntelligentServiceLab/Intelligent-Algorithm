@@ -189,9 +189,9 @@ class GA():
             for j in range(0, self.population_size):
                 if i != j:
                     # 若i被j支配，则淘汰
-                    if (Fitness_List[i][0] < Fitness_List[j][0] and Fitness_List[i][1] < Fitness_List[j][1]) \
-                            or (Fitness_List[i][0] < Fitness_List[j][0] and Fitness_List[i][1] == Fitness_List[j][1]) \
-                            or (Fitness_List[i][0] == Fitness_List[j][0] & Fitness_List[i][1] < Fitness_List[j][1]):
+                    if (Fitness_List[i][0] > Fitness_List[j][0] and Fitness_List[i][1] > Fitness_List[j][1]) \
+                            or (Fitness_List[i][0] > Fitness_List[j][0] and round(Fitness_List[i][1]) == round(Fitness_List[j][1])) \
+                            or (round(Fitness_List[i][0]) == round(Fitness_List[j][0]) and Fitness_List[i][1] > Fitness_List[j][1]):
                         Fitness_List[i][2] = 1
                     else:
                         Fitness_List[i][2] = 0
