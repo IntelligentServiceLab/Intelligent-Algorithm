@@ -5,13 +5,13 @@
 
 ## 参数
 - 输入参数：
- 1. P种群大小
- 2. task_number任务数
- 3. candidate_service_number候选服务数
- 4. max_generation算法迭代次数
+ 1. P-种群大小
+ 2. task_number-任务数
+ 3. candidate_service_number-候选服务数
+ 4. max_generation-算法迭代次数
 - 输出参数:
- 1. time_fit解的时间适应值
- 2. cost_fit解的成本适应值
+ 1. time_fit-解的时间适应值
+ 2. cost_fit-解的成本适应值
 
 ###   三种算法均由本人手写实现，所以可能既不优美，也不简洁，欢迎批评指正以及交流讨论。
 
